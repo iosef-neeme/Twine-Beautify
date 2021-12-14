@@ -22,6 +22,7 @@ function Lightbox()
     lightbox.id = "lightbox";
     document.body.appendChild(lightbox);
     document.getElementById("lightbox").addEventListener("click", Detect_Click)
+    Lightbox_Image();
 }
 function Lightbox_Image()
 {
@@ -34,13 +35,9 @@ function Lightbox_Image()
 /////
 /////
 /////
-
 window.onload = function(){
     if(document.getElementById("init-screen").style.display = "none")
     {setTimeout(function(){
         Lightbox();
-        Lightbox_Image();
-        document.getElementById("passages").style.margin = "0px 0px 0px 240px";
-        document.getElementById("passages").style.maxWidth = "65em";
         }, 0); };
 }
